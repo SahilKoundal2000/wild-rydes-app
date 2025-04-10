@@ -211,7 +211,7 @@ Resources:
       TaskRoleArn: !GetAtt ECSTaskRole.Arn
       ContainerDefinitions:
         - Name: wild-rydes-app
-          Image: !Sub "442042520759.dkr.ecr.us-east-1.amazonaws.com/wild-rydes-app:latest"
+          Image: !Sub "911167931722.dkr.ecr.us-east-1.amazonaws.com/wild-rydes-app:latest"
           PortMappings:
             - ContainerPort: 5000
           LogConfiguration:
@@ -336,7 +336,7 @@ Resources:
         PrivilegedMode: true
         EnvironmentVariables:
           - Name: ECR_REPOSITORY_URI
-            Value: !Sub "442042520759.dkr.ecr.us-east-1.amazonaws.com/wild-rydes-app"
+            Value: !Sub "911167931722.dkr.ecr.us-east-1.amazonaws.com/wild-rydes-app"
       Source:
         Type: CODEPIPELINE
         BuildSpec: buildspec.yml
